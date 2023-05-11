@@ -8,10 +8,8 @@ router.get('/fetchTask/:id', tasksController.fetchTask)
 
 router.post('/addTask', tasksController.addTask)
 
-router.put('/markComplete', tasksController.markComplete)
+router.put('/toggleReminder/:id', tasksController.toggleReminder)
 
-router.put('/markIncomplete', tasksController.markIncomplete)
-
-router.delete('/deleteTask', tasksController.deleteTask)
+router.delete('/deleteTask/:id', tasksController.deleteTask)
 
 module.exports = router
