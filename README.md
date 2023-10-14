@@ -5,6 +5,7 @@ This fullstack web application allows us to keep track of our pending tasks in a
 Note: This is the server-side backend part of the application. For the frontend, visit the following link:
 
 **Link to frontend:** https://github.com/borjaMarti/task-tracker-frontend
+
 **Link to backend:** https://github.com/borjaMarti/task-tracker-backend
 
 ---
