@@ -1,44 +1,43 @@
-# Introduction
+# Task Tracker (Back End)
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+This fullstack web application allows us to keep track of our pending tasks in a simple list, being able to add and delete items as needed. The application makes use of an online database for data persistance and accessibility across different devices, and presents a reactive and reponsive UI.
 
----
+Note: This is the server-side backend part of the application. For the frontend, visit the following link:
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
-
----
-
-# Objectives
-
-- It's a beginner level app created to understand how MVC concept and logins are added
+**Link to frontend:** https://github.com/borjaMarti/task-tracker-frontend
+**Link to backend:** https://github.com/borjaMarti/task-tracker-backend
 
 ---
 
-# Who is this for? 
+## How It's Made:
 
-- It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
+**Tech used:** HTML, CSS, JavaScript, React, Vite, Node.js, Express.js, MongoDB, Mongoose
 
----
+On first use, any items present in the database are loaded into the app.
 
-# Packages/Dependencies used 
+The user can then, through the user interface, add, delete, and toggle reminders.
 
-bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
-
----
-
-# Install all the dependencies or node packages used for development via Terminal
-
-`npm install` 
+All of these actions are passed to and handled by the back-end server, which routes the requests to their respective controller, communicating with MongoDB Atlas through the use of Mongoose schemas to persist the data.
 
 ---
 
-# Things to add
+## Packages/Dependencies used
 
-- Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 
- ---
- 
- Have fun testing and improving it! 😎
+connect-mongo, cors, dotenv, express, mongodb, mongoose, morgan, nodemon
 
+---
 
+## Install all the dependencies or node packages used for development via Terminal
+
+`npm install`
+
+---
+
+## Things to add
+
+- Create a `.env` file and add the following as `key: value`
+  - PORT: 2121 (can be any port example: 3000)
+  - DB_STRING: `your database URI`
+  ***
+
+Have fun testing and improving it! 😎
